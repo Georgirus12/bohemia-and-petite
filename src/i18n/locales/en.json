@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "destinations": "Destinations",
+    "stories": "Stories",
+    "experience": "Experience",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "cover": {
+    "headline": "Europe will become part of your love story.",
+    "subheadline": "Destination wedding and couple photography across Europe, captured with intimacy, artistry, and emotion.",
+    "scroll": "Turn the page"
+  },
+  "destinations": {
+    "title": "Featured Destinations",
+    "subtitle": "Love stories across Europe",
+    "paris": {
+      "title": "Paris at Sunrise",
+      "caption": "The city of light, wrapped in golden morning haze — where every cobblestone whispers of love.",
+      "note": "5:47 AM, Pont des Arts"
+    },
+    "rome": {
+      "title": "Rome in Golden Light",
+      "caption": "Ancient streets bathed in amber — where timeless romance meets la dolce vita.",
+      "note": "Golden hour, Trastevere"
+    },
+    "madrid": {
+      "title": "Madrid's Quiet Streets",
+      "caption": "Intimate corners and hidden plazas — the soul of Spain in every stolen glance.",
+      "note": "Late afternoon, Barrio de las Letras"
+    },
+    "lakeComo": {
+      "title": "Lake Como Elegance",
+      "caption": "Where the Alps meet still waters — an Italian dream painted in silk and stone.",
+      "note": "Morning mist, Bellagio"
+    },
+    "santorini": {
+      "title": "Santorini Textures",
+      "caption": "White-washed walls against the Aegean blue — love written in light and salt.",
+      "note": "Sunset, Oia"
+    },
+    "tuscany": {
+      "title": "Tuscany Countryside Romance",
+      "caption": "Rolling hills and cypress-lined roads — where time slows for two.",
+      "note": "Harvest season, Val d'Orcia"
+    }
+  },
+  "timeline": {
+    "title": "The Experience",
+    "subtitle": "Your journey, beautifully crafted",
+    "steps": {
+      "inquiry": {
+        "title": "The Inquiry",
+        "description": "You reach out, and we begin dreaming together. A conversation about your love, your vision, and the European destination that calls to you."
+      },
+      "planning": {
+        "title": "Planning the Journey",
+        "description": "Every detail is considered — locations, light, timing, and the quiet moments in between. We craft a bespoke session tailored to your story."
+      },
+      "session": {
+        "title": "The Session Day",
+        "description": "An unhurried day of connection and beauty. We wander, we laugh, we capture the in-between moments that become your most treasured memories."
+      },
+      "editing": {
+        "title": "Editing & Delivery",
+        "description": "Each image is carefully curated and art-directed. Your gallery arrives as a cinematic visual story — ready to be relived again and again."
+      },
+      "printed": {
+        "title": "Your Printed Memories",
+        "description": "A luxury album and fine art prints, designed to become a family heirloom. Your love story, bound in linen and paper."
+      }
+    }
+  },
+  "routes": {
+    "title": "Love Across Europe",
+    "subtitle": "Routes & Destinations",
+    "description": "From the Seine to the Aegean — every destination holds a chapter of your story."
+  },
+  "portfolio": {
+    "title": "Visual Stories",
+    "subtitle": "A curated collection of love",
+    "categories": {
+      "elopements": "Elopements",
+      "weddings": "Destination Weddings",
+      "couples": "Couples in Europe",
+      "engagements": "Engagement Sessions",
+      "editorial": "Editorial Bridal"
+    }
+  },
+  "testimonials": {
+    "title": "Words of Love",
+    "quotes": [
+      {
+        "text": "It felt like we were living inside a film.",
+        "author": "Camille & Thomas",
+        "location": "Paris, France"
+      },
+      {
+        "text": "They captured our memories like art. Every photograph feels like a painting we want to live inside.",
+        "author": "Sofia & Marco",
+        "location": "Lake Como, Italy"
+      },
+      {
+        "text": "The most beautiful day of our lives, documented with such tenderness and grace.",
+        "author": "Elena & James",
+        "location": "Santorini, Greece"
+      },
+      {
+        "text": "They didn't just take photos — they told our story.",
+        "author": "Isabelle & Pierre",
+        "location": "Tuscany, Italy"
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Your journey deserves to be remembered forever.",
+    "cta": "Reserve Your European Session 2026",
+    "subtext": "Limited destinations and dates available.",
+    "footer": {
+      "destinations": "Available in: Paris · Rome · Madrid · Lake Como · Santorini · Tuscany · Venice",
+      "rights": "All rights reserved."
+    }
+  }
+}

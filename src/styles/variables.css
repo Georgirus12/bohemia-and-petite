@@ -1,0 +1,30 @@
+:root {
+  --warm-ivory: #F8F4EC;
+  --parchment-beige: #E8DCC8;
+  --sage-green: #A8B5A2;
+  --soft-charcoal: #3D3D3D;
+  --muted-bronze: #B08D57;
+  --warm-taupe: #C9B8A3;
+  --faded-black: #2A2A2A;
+  --dusty-olive: #8A9A7E;
+  --creamy-white: #FAF7F2;
+  --deep-sage: #6B7D64;
+  --rose-dust: #C4A8A0;
+  --aged-gold: #C9A96E;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Cormorant Garamond', 'Libre Baskerville', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-editorial: 'Libre Baskerville', Georgia, serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-2xl: 10rem;
+
+  --shadow-soft: 0 2px 20px rgba(42, 42, 42, 0.06);
+  --shadow-medium: 0 4px 30px rgba(42, 42, 42, 0.1);
+  --shadow-paper: 0 1px 3px rgba(42, 42, 42, 0.08), 0 4px 12px rgba(42, 42, 42, 0.04);
+}

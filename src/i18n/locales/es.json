@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "destinations": "Destinos",
+    "stories": "Historias",
+    "experience": "Experiencia",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "cover": {
+    "headline": "Europa se convertirá en parte de su historia de amor.",
+    "subheadline": "Fotografía de bodas y parejas en Europa, capturada con intimidad, arte y emoción.",
+    "scroll": "Pasa la página"
+  },
+  "destinations": {
+    "title": "Destinos Destacados",
+    "subtitle": "Historias de amor por Europa",
+    "paris": {
+      "title": "París al Amanecer",
+      "caption": "La ciudad de la luz, envuelta en bruma dorada — donde cada adoquín susurra de amor.",
+      "note": "5:47 AM, Pont des Arts"
+    },
+    "rome": {
+      "title": "Roma en Luz Dorada",
+      "caption": "Calles antiguas bañadas en ámbar — donde el romance atemporal se encuentra con la dolce vita.",
+      "note": "Hora dorada, Trastevere"
+    },
+    "madrid": {
+      "title": "Las Calles Silenciosas de Madrid",
+      "caption": "Rincones íntimos y plazas escondidas — el alma de España en cada mirada robada.",
+      "note": "Tarde, Barrio de las Letras"
+    },
+    "lakeComo": {
+      "title": "Elegancia en el Lago de Como",
+      "caption": "Donde los Alpes encuentran aguas quietas — un sueño italiano pintado en seda y piedra.",
+      "note": "Bruma matinal, Bellagio"
+    },
+    "santorini": {
+      "title": "Texturas de Santorini",
+      "caption": "Muros encalados contra el azul del Egeo — amor escrito en luz y sal.",
+      "note": "Atardecer, Oia"
+    },
+    "tuscany": {
+      "title": "Romance en la Toscana",
+      "caption": "Colinas ondulantes y caminos de cipreses — donde el tiempo se detiene para dos.",
+      "note": "Temporada de cosecha, Val d'Orcia"
+    }
+  },
+  "timeline": {
+    "title": "La Experiencia",
+    "subtitle": "Tu viaje, bellamente diseñado",
+    "steps": {
+      "inquiry": {
+        "title": "La Consulta",
+        "description": "Nos escribes y comenzamos a soñar juntos. Una conversación sobre su amor, su visión y el destino europeo que los llama."
+      },
+      "planning": {
+        "title": "Planificando el Viaje",
+        "description": "Cada detalle es considerado — locaciones, luz, tiempos y los momentos tranquilos entre medio. Creamos una sesión a medida de su historia."
+      },
+      "session": {
+        "title": "El Día de la Sesión",
+        "description": "Un día sin prisa de conexión y belleza. Caminamos, reímos, capturamos los momentos intermedios que se convierten en sus recuerdos más preciados."
+      },
+      "editing": {
+        "title": "Edición y Entrega",
+        "description": "Cada imagen es cuidadosamente curada y dirigida artísticamente. Su galería llega como una historia visual cinematográfica — lista para ser revivida una y otra vez."
+      },
+      "printed": {
+        "title": "Sus Recuerdos Impresos",
+        "description": "Un álbum de lujo y impresiones de arte fino, diseñados para convertirse en una herencia familiar. Su historia de amor, encuadernada en lino y papel."
+      }
+    }
+  },
+  "routes": {
+    "title": "Amor por Europa",
+    "subtitle": "Rutas y Destinos",
+    "description": "Desde el Sena hasta el Egeo — cada destino guarda un capítulo de su historia."
+  },
+  "portfolio": {
+    "title": "Historias Visuales",
+    "subtitle": "Una colección curada de amor",
+    "categories": {
+      "elopements": "Elopements",
+      "weddings": "Bodas Destino",
+      "couples": "Parejas en Europa",
+      "engagements": "Sesiones de Compromiso",
+      "editorial": "Editorial Nupcial"
+    }
+  },
+  "testimonials": {
+    "title": "Palabras de Amor",
+    "quotes": [
+      {
+        "text": "Sentimos que vivíamos dentro de una película.",
+        "author": "Camille & Thomas",
+        "location": "París, Francia"
+      },
+      {
+        "text": "Capturaron nuestros recuerdos como arte. Cada fotografía se siente como una pintura en la que quisiéramos vivir.",
+        "author": "Sofia & Marco",
+        "location": "Lago de Como, Italia"
+      },
+      {
+        "text": "El día más hermoso de nuestras vidas, documentado con tanta ternura y gracia.",
+        "author": "Elena & James",
+        "location": "Santorini, Grecia"
+      },
+      {
+        "text": "No solo tomaron fotos — contaron nuestra historia.",
+        "author": "Isabelle & Pierre",
+        "location": "Toscana, Italia"
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Tu viaje merece ser recordado para siempre.",
+    "cta": "Reserva Tu Sesión Europea 2026",
+    "subtext": "Destinos y fechas limitadas disponibles.",
+    "footer": {
+      "destinations": "Disponible en: París · Roma · Madrid · Lago de Como · Santorini · Toscana · Venecia",
+      "rights": "Todos los derechos reservados."
+    }
+  }
+}
