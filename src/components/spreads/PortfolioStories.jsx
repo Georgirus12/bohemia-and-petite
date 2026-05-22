@@ -67,7 +67,7 @@ const PortfolioStories = () => {
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          padding: 'clamp(5rem, 8vw, 6rem) clamp(2rem, 3vw, 3rem) clamp(2rem, 3vw, 3rem)',
+          padding: 'clamp(6rem, 10vw, 8rem) clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem)',
         }}
       >
         <motion.div

@@ -59,8 +59,8 @@ const FeaturedDestinations = () => {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
-            padding: 'clamp(2rem, 5vw, 5rem)',
+            justifyContent: 'flex-start',
+            padding: 'clamp(6rem, 10vw, 8rem) clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem)',
           }}
         >
           <motion.div
