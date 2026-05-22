@@ -3,20 +3,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useIsMobile } from '../hooks/useIsMobile';
 
-const Wordmark = ({ light = false, small = false }) => {
+const Wordmark = ({ light = false, small = false, onClick }) => {
   const color = light ? 'var(--creamy-white)' : 'var(--faded-black)';
   const size = small ? '0.85rem' : '1.15rem';
   const scriptSize = small ? '0.65rem' : '0.85rem';
 
   return (
-    <div
+    <button
+      onClick={onClick}
+      aria-label="Go to home"
       style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
         lineHeight: 1,
-        cursor: 'default',
+        cursor: 'pointer',
         userSelect: 'none',
+        background: 'none',
+        border: 'none',
+        padding: 0,
       }}
     >
       <span style={{ fontFamily: 'var(--font-display)', fontSize: size, fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color, transition: 'color 0.5s ease' }}>
@@ -28,7 +33,7 @@ const Wordmark = ({ light = false, small = false }) => {
       <span style={{ fontFamily: 'var(--font-display)', fontSize: size, fontWeight: 300, letterSpacing: '0.18em', textTransform: 'uppercase', color, marginTop: '-2px', transition: 'color 0.5s ease' }}>
         Petite
       </span>
-    </div>
+    </button>
   );
 };
 
@@ -131,14 +136,14 @@ const Navigation = ({ currentSpread, onNavigate }) => {
             : '1.5rem clamp(2rem, 5vw, 4rem)',
           background: isMobile
             ? (isLight
-                ? 'rgba(42, 42, 42, 0.5)'
-                : 'rgba(248, 244, 236, 0.7)')
+                ? 'linear-gradient(180deg, rgba(42,42,42,0.35) 0%, rgba(42,42,42,0.08) 60%, transparent 100%)'
+                : 'linear-gradient(180deg, rgba(248,244,236,0.65) 0%, rgba(248,244,236,0.15) 60%, transparent 100%)')
             : 'transparent',
-          backdropFilter: isMobile ? 'blur(12px)' : 'none',
-          WebkitBackdropFilter: isMobile ? 'blur(12px)' : 'none',
+          backdropFilter: isMobile ? 'blur(8px)' : 'none',
+          WebkitBackdropFilter: isMobile ? 'blur(8px)' : 'none',
         }}
       >
-        <Wordmark light={isLight} small={isMobile} />
+        <Wordmark light={isLight} small={isMobile} onClick={() => handleNav(0)} />
 
         {isMobile ? (
           <Hamburger open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} light={menuOpen ? false : isLight} />
