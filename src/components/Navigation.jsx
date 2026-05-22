@@ -129,7 +129,13 @@ const Navigation = ({ currentSpread, onNavigate }) => {
           padding: isMobile
             ? '1rem 1.2rem'
             : '1.5rem clamp(2rem, 5vw, 4rem)',
-          background: 'transparent',
+          background: isMobile
+            ? (isLight
+                ? 'rgba(42, 42, 42, 0.5)'
+                : 'rgba(248, 244, 236, 0.7)')
+            : 'transparent',
+          backdropFilter: isMobile ? 'blur(12px)' : 'none',
+          WebkitBackdropFilter: isMobile ? 'blur(12px)' : 'none',
         }}
       >
         <Wordmark light={isLight} small={isMobile} />
