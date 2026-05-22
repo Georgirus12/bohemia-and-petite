@@ -1,9 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useIsMobile } from '../hooks/useIsMobile';
 
-const Wordmark = ({ light = false }) => {
+const Wordmark = ({ light = false, small = false }) => {
   const color = light ? 'var(--creamy-white)' : 'var(--faded-black)';
+  const size = small ? '0.85rem' : '1.15rem';
+  const scriptSize = small ? '0.65rem' : '0.85rem';
 
   return (
     <div
@@ -19,7 +22,7 @@ const Wordmark = ({ light = false }) => {
       <span
         style={{
           fontFamily: 'var(--font-display)',
-          fontSize: '1.15rem',
+          fontSize: size,
           fontWeight: 500,
           letterSpacing: '0.18em',
           textTransform: 'uppercase',
@@ -32,7 +35,7 @@ const Wordmark = ({ light = false }) => {
       <span
         style={{
           fontFamily: 'var(--font-script)',
-          fontSize: '0.85rem',
+          fontSize: scriptSize,
           color: 'var(--muted-bronze)',
           marginTop: '-2px',
           letterSpacing: '0.02em',
@@ -44,7 +47,7 @@ const Wordmark = ({ light = false }) => {
       <span
         style={{
           fontFamily: 'var(--font-display)',
-          fontSize: '1.15rem',
+          fontSize: size,
           fontWeight: 300,
           letterSpacing: '0.18em',
           textTransform: 'uppercase',
@@ -62,6 +65,7 @@ const Wordmark = ({ light = false }) => {
 const Navigation = ({ currentSpread, onNavigate }) => {
   const { t, i18n } = useTranslation();
   const isLight = currentSpread === 0 || currentSpread === 6;
+  const isMobile = useIsMobile();
 
   const links = [
     { label: t('nav.destinations'), spread: 1 },
@@ -88,16 +92,18 @@ const Navigation = ({ currentSpread, onNavigate }) => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '1.5rem clamp(2rem, 5vw, 4rem)',
+        padding: isMobile
+          ? '1rem 1.2rem'
+          : '1.5rem clamp(2rem, 5vw, 4rem)',
         background: 'transparent',
       }}
     >
-      <Wordmark light={isLight} />
+      <Wordmark light={isLight} small={isMobile} />
 
       <div
         style={{
           display: 'flex',
-          gap: '1.8rem',
+          gap: isMobile ? '0.8rem' : '1.8rem',
           alignItems: 'center',
         }}
       >
@@ -107,8 +113,8 @@ const Navigation = ({ currentSpread, onNavigate }) => {
             onClick={() => onNavigate(link.spread)}
             style={{
               fontFamily: 'var(--font-editorial)',
-              fontSize: '0.65rem',
-              letterSpacing: '0.15em',
+              fontSize: isMobile ? '0.55rem' : '0.65rem',
+              letterSpacing: isMobile ? '0.08em' : '0.15em',
               textTransform: 'uppercase',
               color: isLight ? 'var(--creamy-white)' : 'var(--soft-charcoal)',
               opacity: currentSpread === link.spread ? 1 : 0.6,
@@ -123,7 +129,7 @@ const Navigation = ({ currentSpread, onNavigate }) => {
               paddingBottom: '0.25rem',
             }}
           >
-            {link.label}
+            {isMobile ? link.label.slice(0, 4) : link.label}
           </button>
         ))}
 
@@ -131,7 +137,7 @@ const Navigation = ({ currentSpread, onNavigate }) => {
           onClick={toggleLanguage}
           style={{
             fontFamily: 'var(--font-editorial)',
-            fontSize: '0.6rem',
+            fontSize: isMobile ? '0.5rem' : '0.6rem',
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: isLight ? 'var(--creamy-white)' : 'var(--soft-charcoal)',
@@ -139,11 +145,11 @@ const Navigation = ({ currentSpread, onNavigate }) => {
             border: `1px solid ${
               isLight ? 'rgba(250, 247, 242, 0.3)' : 'var(--warm-taupe)'
             }`,
-            padding: '0.35rem 0.7rem',
+            padding: isMobile ? '0.25rem 0.5rem' : '0.35rem 0.7rem',
             cursor: 'pointer',
             transition: 'all 0.3s ease',
             opacity: 0.7,
-            marginLeft: '0.5rem',
+            marginLeft: isMobile ? '0' : '0.5rem',
           }}
         >
           {i18n.language === 'en' ? 'ES' : 'EN'}
