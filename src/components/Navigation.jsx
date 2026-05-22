@@ -139,10 +139,23 @@ const Navigation = ({ currentSpread, onNavigate }) => {
                 ? 'linear-gradient(180deg, rgba(42,42,42,0.35) 0%, rgba(42,42,42,0.08) 60%, transparent 100%)'
                 : 'linear-gradient(180deg, rgba(248,244,236,0.65) 0%, rgba(248,244,236,0.15) 60%, transparent 100%)')
             : 'transparent',
-          backdropFilter: isMobile ? 'blur(8px)' : 'none',
-          WebkitBackdropFilter: isMobile ? 'blur(8px)' : 'none',
         }}
       >
+        {isMobile && (
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              bottom: '-0.5rem',
+              backdropFilter: 'blur(8px)',
+              WebkitBackdropFilter: 'blur(8px)',
+              maskImage: 'linear-gradient(to bottom, black 40%, transparent 95%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 95%)',
+              zIndex: -1,
+              pointerEvents: 'none',
+            }}
+          />
+        )}
         <Wordmark light={isLight} small={isMobile} onClick={() => handleNav(0)} />
 
         {isMobile ? (
