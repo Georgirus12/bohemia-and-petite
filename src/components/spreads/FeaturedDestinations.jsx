@@ -20,7 +20,7 @@ const FeaturedDestinations = () => {
   const isMobile = useIsMobile();
 
   const gridStyle = isMobile
-    ? { display: 'flex', flexDirection: 'column', height: '100%', overflow: 'auto' }
+    ? { display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }
     : { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0' };
 
   const listPadding = isMobile

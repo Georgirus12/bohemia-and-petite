@@ -38,7 +38,7 @@ const CoverStory = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          padding: isMobile ? '4.5rem 1.5rem 2rem 1.5rem' : 'clamp(2rem, 8vw, 8rem)',
+          padding: isMobile ? '1.5rem' : 'clamp(2rem, 8vw, 8rem)',
           maxWidth: '1400px',
         }}
       >

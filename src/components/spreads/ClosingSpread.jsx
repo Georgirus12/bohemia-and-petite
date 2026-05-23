@@ -16,7 +16,7 @@ const ClosingSpread = () => {
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1507501336526-624cc0a3b23e?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.5) saturate(0.8)' }} />
       <PaperTexture />
 
-      <div style={{ position: 'relative', zIndex: 10, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: isMobile ? '4.5rem 1.5rem 2rem 1.5rem' : 'clamp(2rem, 8vw, 8rem)' }}>
+      <div style={{ position: 'relative', zIndex: 10, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: isMobile ? '2rem 1.5rem' : 'clamp(2rem, 8vw, 8rem)' }}>
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 0.3 }} style={{ maxWidth: '800px' }}>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: isMobile ? 'clamp(1.6rem, 6vw, 2.5rem)' : 'clamp(2.5rem, 5vw, 5rem)', color: 'var(--creamy-white)', lineHeight: 1.1, marginBottom: isMobile ? '2rem' : '3rem', fontStyle: 'italic' }}>
             {t('closing.headline')}
