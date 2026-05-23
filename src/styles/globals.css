@@ -97,8 +97,17 @@ img {
 }
 
 @media (max-width: 768px) {
+  html {
+    overflow: visible;
+  }
+
   body {
     font-size: 16px;
+    overflow: visible;
+  }
+
+  #root {
+    overflow: visible;
   }
 
   h1 {
@@ -128,5 +137,6 @@ img {
   .spread {
     overflow-y: auto;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }

@@ -98,7 +98,7 @@ const PageTurner = ({ children, currentSpread: externalSpread, onSpreadChange })
       style={{
         width: '100vw',
         height: '100vh',
-        overflow: 'hidden',
+        overflow: isMobile ? 'visible' : 'hidden',
         position: 'relative',
       }}
     >
